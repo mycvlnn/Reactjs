@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+input {
+  padding: 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://picsum.photos/2000");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+}
+.formInput label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 100%;
+}
+form {
+  background: #fff;
+  padding: 32px;
+  border-radius: 10px;
+  width: 40%;
+  box-sizing: border-box;
+}
+button {
+  background: orangered;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+.text-errorMessage {
+  display: none;
+  text-align: left;
+  margin-top: 10px;
+  width: 100%;
+  color: red;
+}
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
